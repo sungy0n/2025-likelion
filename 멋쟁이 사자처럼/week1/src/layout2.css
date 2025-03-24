@@ -1,0 +1,48 @@
+header{
+    display: flex;
+    justify-content: center;
+}
+
+header>.left{
+    width: 250px;
+    height: 100px;
+    background-color: #54D8DC;
+}
+
+header>.right{
+    width: 1000px;
+    height: 100px;
+    background-color: #86DADC;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+footer>.left{
+    width: 250px;
+    height: 100px;
+    background-color: #FDE1E0;
+}
+
+
+footer .up{
+    width: 1000px;
+    height: 50px;
+    background-color: #FECECE;
+}
+
+footer .down{
+    width: 1000px;
+    height: 50px;
+    background-color: #FDB2B5;
+}
+
+
+
