@@ -1,0 +1,223 @@
+#wrap{
+    margin: 0 auto;
+    width: 1280px;
+}
+
+.logo{
+    width: 200px;
+    background-color: #EAE9EE;
+}
+
+nav{
+    width: 1080px;
+    background-color: #C2C3D6;
+}
+
+header{
+    height: 100px;
+    display: flex;
+}
+
+.top_left{
+    width: 250px;
+    height: 440px;
+    background-image: url(/week2/src/img/Rectangle\ 65.png);    
+}
+
+.right_top{
+    width: 730px;
+    height: 220px;
+    background-image: url(/week2/src/img/Rectangle\ 178.png);
+}
+
+.right_bottom{
+    width: 730px;
+    height: 220px;
+    background-image: url(/week2/src/img/Rectangle\ 176.png);
+}
+
+.section_bottom{
+    width: 980px;
+    height: 440px;
+    background-image: url(/week2/src/img/Rectangle\ 177.png);
+}
+
+.section_top{
+    display: flex;
+}
+
+main{
+    display: flex;
+}
+
+aside{
+    width: 300px;
+    height: 880px;
+    background-image: url(/week2/src/img/Rectangle\ 66.png);
+}
+
+footer{
+    height: 100px;
+    display: flex;
+}
+
+.footer_left, .footer_right{
+    width: 200px;
+    height: 100px;
+    background-color: #3A258A;
+}
+
+.footer_center{
+    width: 880px;
+    height: 100px;
+    background-color: #6469CD;
+}
+
+@media(max-width:680px){
+    nav{
+        width: 680px;
+        height: 100px;
+    }
+
+    .logo{
+        width: 200px;
+        height: 100px;
+        position: absolute;
+        left: 240px;
+    }
+
+    header{
+        width: 680px;
+        height: 100px;
+        display: flex;
+    }
+
+    .section_bottom{
+        width: 680px;
+        order: 1;
+    }
+
+    .right_top{
+        width: 680px;
+        order: 3;
+    }
+
+    .right_bottom{
+        width: 680px;
+        order: 2;
+    }
+
+    section{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .top_left{
+        display: none;
+    }
+
+    .top_right{
+        display: flex; 
+        flex-direction: column;
+    }
+
+    aside{
+        display: none;
+    }
+
+    footer{
+        width: 680px;
+    }
+
+    .footer_left, .footer_right{
+        width: 106px;
+        height: 100px;
+    }
+
+    .footer_center{
+        width: 468px;
+        height: 100px;
+    }
+}
+
+@media(max-width:450px){
+    nav{
+        width: 350px;
+    }
+
+    .logo{
+        left: 358px;
+        width: 100px;
+    }
+
+    header{
+        width: 450px;
+        height: 100px;
+        display: flex;
+    }
+
+    .right_bottom{
+        width: 225px;
+        height: 440px;
+        background-image: url(/week2/src/img/Rectangle\ 65.png);
+    }
+
+    .right_top{
+        width: 225px;
+        height: 440px;
+        background-image: url(/week2/src/img/Rectangle\ 176.png);
+    }
+
+    .section_bottom{
+        display: none;
+    }
+
+    .top_right{
+        display: flex;
+        flex-direction: row;
+        order: 1;
+    }
+
+    .section_top{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top_left{
+        display: flex; 
+        width: 450px;
+        height: 220px;
+        background-image: url(/week2/src/img/Rectangle\ 178.png);
+        order: 2;
+    }
+
+    .frame{ 
+        display: flex;
+        order: 3;
+    }
+
+    .frame_left{
+        width: 225px;
+        height: 220px;
+        background-image: url(/week2/src/img/Rectangle\ 177.png);
+    }
+
+    .frame_right{
+        width: 225px;
+        height: 220px;
+        background-image: url(/week2/src/img/Rectangle\ 66.png);
+    }
+
+    .footer_left, .footer_right{
+        display: none;
+    }
+
+    .footer_center{
+        width: 450px;
+        height: 100px;
+    }
+
+}
+
+
+

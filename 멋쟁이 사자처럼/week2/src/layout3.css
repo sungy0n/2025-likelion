@@ -1,0 +1,126 @@
+#wrap{
+    margin: 0 auto;
+    width: 1250px;
+}
+
+.logo{
+    width: 250px;
+    height: 100px;
+    background-color: #EEEEE9;
+}
+
+nav{
+    width: 1000px;
+    height: 100px;
+    background-color: #D6CCC2;
+}
+
+header{
+    display: flex;
+}
+
+.section1{
+    width: 100%;
+    height: 440px;
+    background-color: #F5ECE1;
+}
+
+.section2{
+    width: 500px;
+    height: 500px;
+    background-color: #866756;
+    position:absolute;
+    top: 300px;  /*화면 비율에도 늘 중앙위치로 어떻게 고정시키지*/
+    left: 1000px; 
+}
+
+.section3{
+    display: flex;
+}
+
+.section3_left{
+    width: 625px;
+    height: 540px;
+    background-color: #E4D6CA;
+}
+
+.section3_right{
+    width: 625px;
+    height: 540px;
+    background-color: #D5BEB1;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: #D6CCC2;
+}
+
+@media(max-width:680px){
+    header{
+        width: 680px;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    nav{
+        width: 680px;
+    }
+
+    .section1{
+        width: 680px;
+        height: 294px;
+    }
+
+    .section2{
+        width: 235px;
+        height: 235px;
+        position: absolute;
+        top: 750px;
+        left: 10px;
+    }
+
+    .section3{
+        display: block;
+    }
+
+    .section3_left, .section3_right{
+        width: 680px;
+        height: 294px;
+    }
+
+    footer{
+        width: 680px;
+    }
+}
+
+@media(max-width:450px){
+    nav{
+        width: 450px;
+    }
+
+    .section1{
+        width: 450px;
+    }
+
+    .section3_left{
+        width: 450px;
+    }
+
+    .section3_right{
+        width: 450px;
+    }
+
+    footer{
+        width: 450px;
+    }
+
+    .section2{
+        width: 200px;
+        height: 200px;
+        top: 108px;
+        left: 257px;
+    }
+}

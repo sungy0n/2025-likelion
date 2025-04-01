@@ -1,0 +1,154 @@
+#wrap{
+    margin: 0 auto;
+    width: 1250px;
+}
+
+.logo{
+    width: 250px;
+    height: 100px;
+    background-color: #54D8DC;
+}
+
+nav{
+    width: 1000px;
+    height: 100px;
+    background-color: #86DADC;
+}
+
+header{
+    display: flex;
+}
+
+main{
+    display: flex;
+}
+
+main>div{
+    width: 416px;
+    height: 880px;
+}
+
+.section1{
+    background-image:url(/week2/src/img/Rectangle\ \(1\).png);
+}
+
+.section2{
+    background-image: url(/week2/src/img/Rectangle\ \(2\).png);
+}
+
+.section3{
+    background-image: url(/week2/src/img/Rectangle.png);
+}
+
+.footer_left{
+   width: 250px;
+   height: 100px;
+   background-color: #FDE1E0; 
+}
+
+
+.right_top{   
+    width: 1000px;
+    height: 50px;
+    background-color: #FECECE;
+}
+
+.right_bottom{
+    width: 1000px;
+    height: 50px;
+    background-color: #FDB2B5;
+}
+
+footer{
+    display: flex;
+}
+
+@media(max-width:680px){
+    header{
+        display: block;
+        width: 680px;
+        height: 200px;
+    }
+
+    .logo{
+        width: 680px;
+        height: 100px;
+    }
+
+    nav{
+        width: 680px;
+        height: 100px;
+    }
+
+    main{
+        display: block;
+    }
+
+    .section1{
+       width: 680px;
+       height: 250px;
+    }
+
+    .section2{
+        width: 680px;
+        height: 250px;
+    }
+
+     .section3{
+        width: 680px;
+        height: 250px;
+     }
+
+
+    footer{
+         flex-direction: column;
+    }
+
+    .footer_left{
+        width: 680px;
+    }
+
+    .right_top{
+        width: 680px;
+    }
+
+    .right_bottom{
+        width: 680px;
+    }
+
+}
+
+@media(max-width:450px){
+    .logo{
+        width: 450px;
+        height: 100px;
+    }
+
+    nav{
+        width: 450px;
+        height: 100px;
+    }
+
+    header{
+        width: 450px;
+        height: 200px;
+    }
+
+    .section1, .section2{
+        width: 450px;
+        height: 340px;
+    }
+
+    .section3{
+        display: none;
+    }
+
+    .footer_right>div{
+        display: none;
+    }
+
+    .footer_left{
+        width: 450px;
+        height: 200px;
+    }
+}
