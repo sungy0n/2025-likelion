@@ -30,7 +30,7 @@ header{
     height: 500px;
     background-color: #866756;
     position:absolute;
-    top: 300px;  /*화면 비율에도 늘 중앙위치로 어떻게 고정시키지*/
+    top: 300px;
     left: 1000px; 
 }
 
