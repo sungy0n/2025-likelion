@@ -26,6 +26,7 @@ nav{
     position: absolute;
     top: 0;
     right: 0;
+    z-index: 5;
 }
 
 nav>ul{
@@ -41,7 +42,7 @@ nav>ul>li>a{
     display: block;
     width: 120px;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
     color: #F5E4EA;
     text-decoration: none;
     font-size: 20px;
@@ -127,8 +128,82 @@ nav>ul>li>ul>li:hover>a{
 }
 
 .contents .con article.con1{
-    background-color: blueviolet;
+    background-color:#F5E4EA;
 }
+
+.con1 .tabmenu{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+
+.con1 .tabmenu li{
+    width: 150px;
+    display: inline-block;
+    background-color: #F5E4EA;
+}
+
+.con1 .tabmenu li.on{
+   background-color: #444C61;
+}
+
+.con1 .tabmenu li.on a{
+    color: #F5E4EA;
+ }
+
+.con1 .tabmenu li a{
+    color: #444C61;
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+}
+
+.con .notice_tabcon{
+    height: 230px;
+    background-color:#F5E4EA;
+}
+
+
+.notice_tabcon th{
+    padding: 5px;
+    text-align: left;
+    color: #444C61;
+    font-weight: normal;
+}
+
+.notice_tabcon td{
+    color: #444C61;
+}
+
+.notice_tabcon tr{
+    color: #444C61;
+}
+
+.notice_tabcon a{
+    text-decoration: none;
+    color: #444C61;
+    display: block;
+    padding: 4px;
+}
+
+.con .gall_tab{
+    width: 400px;
+    height: 280px;
+    display: none;
+}
+
+.gall_tab ul{
+    padding: 0;
+    display: flex;
+    text-align: center;
+}
+
+.gall_tab ul li{
+    padding: 5px;
+}
+
 
 
 .contents .con article.con2{
