@@ -1,8 +1,7 @@
-import React, { use, useRef, useState } from 'react'
-import '../TicTacToe/TicTacToe.jsx' /*여기 바꾸니까 됨*/
-import circle_icon from '../assets/circle.png'
-import cross_icon from '../assets/cross.png'
-import '../TicTacToe/TicTacToe.css'
+import React, { useRef, useState } from 'react';
+import circle_icon from '../assets/circle.png';
+import cross_icon from '../assets/cross.png';
+import './TicTacToe.css';
 
 
 
