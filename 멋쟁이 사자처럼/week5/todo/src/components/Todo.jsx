@@ -13,7 +13,7 @@ const Todo= () => {
     const handleInputChange = (e) => setInput(e.target.value);
 
     const handleAddTodo = () => {
-        if(input.trim()==="")
+        if(input.trim()==="" || todo.length>=5)
             return;
         setTodo([...todo,{ text: input, completed: false }]);
         setInput("");
@@ -34,7 +34,7 @@ const Todo= () => {
 
 
 return (
-    <div className="Main_wrap">
+    <div className="Todo_wrap">
     <div className="section">
         <div className="title">TO-DO-LIST</div>
         <div className="input">
