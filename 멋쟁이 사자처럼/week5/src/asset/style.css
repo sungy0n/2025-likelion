@@ -1,0 +1,140 @@
+body{
+    height: 100vh;
+    background-color: #92CAFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@font-face {
+    font-family: 'NanumSquareNeoBold';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.ttf) format("truetype");
+}
+
+*{
+    font-family: NanumSquareNeoBold;
+    box-sizing: border-box;/*패딩값을 주면 원래 더 늘어나게 되는데 이걸 주면 기본 있는거 안에서만 줌 */
+}
+
+.button_wrap{
+    .write_btn{
+        width: 400px;
+        height: 200px;
+        border-radius: 20px;
+        background-color: #fff;
+        font-size: 32px;
+        border: 0;
+        color: #49A1F1;
+        cursor: pointer;
+    }
+}
+
+.Write_wrap{
+    background-color: #fff;
+    width: 1000px;
+    height: 800px;
+    border-radius: 20px;
+    padding: 40px 60px;
+
+    .title{
+        width: 100%;
+        height: 65px;
+        padding-left: 20px;
+        border: 4px solid #49A1F1;
+        outline: none;
+        margin-bottom: 26px;
+        font-size: 20px;
+        border-radius: 10px;
+    }
+}
+
+.content{
+    margin-bottom: 26px;
+    width: 100%;
+    border: 4px solid #49A1F1;
+    height: 522px;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    outline: none;
+    resize: none;
+}
+
+::placeholder{
+    font-size: 20px;
+    color: #49A1F1;
+}
+
+.button_box{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    a,button{
+        font-weight: 700;
+        width: 250px;
+        height: 65px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        color: #49A1F1;
+        background-color: #fff;
+        border-radius: 10px;
+        border: 4px solid #92CAFF;
+        text-decoration: none;
+    }
+
+    button{
+        background-color: #49A1F1;
+        color: #fff;
+    }
+}
+
+.Article_wrap{
+    width: 1000px;
+    height: 800px;
+    background-color: #fff;
+    border-radius: 20px;
+    color: #49A1F1;
+    box-sizing: border-box;
+    padding: 50px;
+}
+
+.title{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.content{
+    font-size: 20px;
+    border: none;
+    padding: 0;
+}
+
+.comment_box{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+input{
+    width: 700px;
+    height: 65px;
+    color: #49A1F1;
+    border-radius: 10px;
+    border-color: #49A1F1;
+    ::placeholder{
+        color: #49A1F1;
+    }
+}
+
+button{
+    width: 129px;
+    height: 64px;
+    background-color:#92CAFF;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/week9/asset/css/section/account.css">
+    <link rel="stylesheet" href="/week9/asset/css/style.css">
+</head>
+<body>
+    <div id="wrap" class="container">
+        <header>
+            <div class="back"> ❮ </div>
+            <p>Profile</p>
+        </header> 
+        <div class="profile">
+            <img src="/week9/asset/img/Ellipse 741.png" alt="">
+            <div class="info">
+                <h1>Jonas Macroni</h1>
+                <p>Expert</p>
+            </div>
+        </div>
+            <main>
+                <div class="info1">
+                    <img src="/week9/asset/img/info1.png" alt="">
+                    <div class="text">
+                        <h1>Contact Info</h1>
+                        <p> ❯ </p>
+                    </div>
+                </div>
+                <div class="info2">
+                    <img src="/week9/asset/img/info2.png" alt="">
+                    <div class="text">
+                        <h1>Source of Funding Info</h1>
+                        <p> ❯ </p>
+                    </div>
+                </div>
+                <div class="info3">
+                    <img src="/week9/asset/img/info3.png" alt="">
+                    <div class="text">
+                        <h1>Bank Account Info</h1>
+                        <p> ❯ </p>
+                    </div>
+                </div>
+                <div class="info4">
+                    <img src="/week9/asset/img/info4.png" alt="">
+                    <div class="text">
+                        <h1>Document Info</h1>
+                        <p> ❯ </p>
+                    </div>
+                </div>
+                <div class="info5">
+                    <img src="/week9/asset/img/info5.png" alt="">
+                    <div class="text">
+                        <h1>Setting</h1>
+                        <p> ❯ </p>
+                    </div>
+                </div>
+            </main>
+           <footer>
+                <div class="home">
+                    <img src="/week9/asset/img/home_account.png" alt="">
+                    <p>Home</p>
+                </div>
+                <div class="product">
+                    <img src="/week9/asset/img/search.png" alt="">
+                    <p>Product</p>
+                </div>
+                <div class="transcation">
+                    <img src="/week9/asset/img/transcation.png" alt="">
+                    <p>Transcation</p>
+                </div>
+                <div class="account">
+                    <img src="/week9/asset/img/profile_account.png" alt="">
+                    <p class="green">Account</p>
+                </div>
+            </footer>
+    </div>
+    <script>
+         document.querySelector('.home').addEventListener('click',
+                function(){
+                    window.location.href='homepage.html'
+                }
+            )
+         document.querySelector('.product').addEventListener('click',
+                function(){
+                    window.location.href='product.html'
+                }
+            )
+            document.querySelector('.transcation').addEventListener('click',
+                function(){
+                    window.location.href='transcation.html'
+                }
+            )
+            document.querySelector('.back').addEventListener('click',
+                function(){
+                    window.location.href='homepage.html'
+                }
+            )
+            document.querySelector('.info1').addEventListener('click',
+                function(){
+                    window.location.href='infoedit.html'
+                }
+            )
+    </script>
+</body>
+</html>

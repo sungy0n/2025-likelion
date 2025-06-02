@@ -1,0 +1,201 @@
+#wrap{
+    background-color: #F8F8F9;
+    padding: 29px;
+    cursor: pointer;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap:110px;
+}
+
+header>h1{
+    font-size: 17px;
+}
+
+
+.circle{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: black;
+    opacity: 0.4;
+}
+
+.profile>img{
+    width: 150px;
+    height: 150px;
+}
+
+main{
+    padding-top: 49px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.icon>img{
+    width: 24px;
+    height: 24px;
+}
+
+.icon{
+    position: absolute;
+}
+
+section{
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+    padding-bottom: 194px;
+}
+
+.name{
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid 1px #000000;
+}
+
+.name>p{
+    color: #333333;
+    font-size: 12px;
+}
+
+.name_input{
+    display: flex;
+    justify-content: space-between;
+}
+
+.name_input>p{
+    font-size: 17px;
+}
+
+.green{
+    color: #31A05F;
+    font-size: 10px;
+}
+
+.Birthdate{
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid 1px #000000;
+}
+
+.Birthdate>p{
+    color: #333333;
+    font-size: 12px;
+}
+
+.Birthdate_input{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Birthdate_input>p{
+    font-size: 17px;
+}
+
+.green{
+    color: #31A05F;
+    font-size: 10px;
+}
+
+
+.Gender{
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid 1px #000000;
+}
+
+.Gender>p{
+    color: #333333;
+    font-size: 12px;
+}
+
+.Gender_input{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Gender_input>p{
+    font-size: 17px;
+}
+
+.green{
+    color: #31A05F;
+    font-size: 10px;
+}
+
+.Email{
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid 1px #000000;
+}
+
+.Email>p{
+    color: #333333;
+    font-size: 12px;
+}
+
+.Email_input{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Email_input>p{
+    font-size: 17px;
+}
+
+.green{
+    color: #31A05F;
+    font-size: 10px;
+}
+
+.Phone{
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid 1px #000000;
+}
+
+.Phone>p{
+    color: #333333;
+    font-size: 12px;
+}
+
+.Phone_input{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Phone_input>p{
+    font-size: 17px;
+}
+
+
+.Address{
+    display: flex;
+    flex-direction: column;
+}
+
+.Address>p{
+    color: #333333;
+    font-size: 12px;
+}
+
+.Address_input{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Address_input>p{
+    font-size: 17px;
+}
+
+

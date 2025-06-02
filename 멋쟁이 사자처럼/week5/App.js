@@ -1,6 +1,6 @@
 import React from "react";
 import Main from "./components/section/Main";
-import TicTacToe from '../src/components/TicTacToe/TicTacToe.jsx';
+import TicTacToe from '../week4/src/components/TicTacToe/TicTacToe.jsx';
 
 
 function App() {

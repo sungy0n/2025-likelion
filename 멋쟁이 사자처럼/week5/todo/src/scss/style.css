@@ -1,4 +1,4 @@
-.Main_wrap{
+.Todo_wrap{
     width: 1980px;
     height: 1080px;
     background-color: #92CAFF;
@@ -50,17 +50,20 @@
     margin-top: 42px;
 
     .list{
+        width: 100%;
+        box-sizing: border-box;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-between; 
         padding-left: 30px;
         padding-right: 30px;
-        padding-top: 10px;
+        padding-top: 5px;
 
 
         .btn{
             border: none;
             background: none;
         }
+
 
         
     }
@@ -78,7 +81,7 @@
     }
 
     .line{
-        border-top: 1px solid;
+        border-bottom: 1px solid;
         color: #92CAFF;
         width: 520px;
         margin-left: 40px;

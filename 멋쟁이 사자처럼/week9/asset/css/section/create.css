@@ -1,0 +1,58 @@
+#wrap{
+    background-color: #ffffff;
+}
+
+.back{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+}
+
+img {
+    width: 6px;
+    height: 12px;
+    margin-left: 29px;
+    margin-bottom: 30px;
+}
+
+h1{
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.info{
+    font-size: 17px;
+    color: #4F4F4F;
+}
+
+.account{
+    margin-top: 87px;
+    display: flex;
+    flex-direction:column;
+    gap: 18px;
+}
+
+input{
+    width: 343px;
+    height: 60px;
+    border-radius: 20px;
+    border: 1px solid #828282;
+    margin-bottom: 13px;
+    padding: 25px;
+}
+
+.btn{
+    width: 354px;
+    height: 60px;
+    background-color: #31A062;
+    border-radius: 20px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 15px;
+    margin-bottom: 44px;
+}
+
+p{
+    color: #31A062;
+    margin-bottom: 250px;
+}

@@ -1,0 +1,36 @@
+#wrap{
+    background-color: #FAFAFA;
+    cursor: pointer;
+}
+
+img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 34px;
+}
+
+P{
+    font-size: 17px;
+    color: #4F4F4F;
+}
+
+.btn1{
+    margin-top: 101px;
+    width: 354px;
+    height: 60px;
+    background-color: #31A062;
+    border-radius: 20px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.btn2{
+    color: #31A062;
+    padding-top: 17px;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/week9/asset/css/style.css">
+    <link rel="stylesheet" href="/week9/asset/css/section/create.css">
+</head>
+<body>
+    <div id="wrap" class="container">
+        <div class="back"><img src="/week9/asset/img/Vector.png" alt=""></div>
+        <h1>Create an account</h1>
+        <div class="info">Invest and double your income now</div>
+        <div class="account">
+            <input type="text" placeholder="Full name">
+            <input type="text" placeholder="Email address">
+            <input type="password" placeholder="Password">
+        </div>
+        <div class="btn">Create account</div>
+        <p>Already have an account?</p>
+    </div>
+    <script>
+        document.querySelector('.back').addEventListener('click',
+            function(){
+                window.location.href='start-sign up.html'
+            }
+        )
+        function checkInputs(){
+            const inputs=document.querySelectorAll('.account input'
+            );
+
+            for (let input of inputs){
+                if(!input.value.trim()){
+                    input.focus();
+                    return false
+                }
+            }
+            return true;
+        }
+        document.querySelector('.btn').addEventListener('click',
+            function(){
+                if(checkInputs()){
+                    window.location.href='homepage.html';
+                }else{
+                    alert('계정을 생성해주세요')
+                }
+            }
+        )
+    </script>
+</body>
+</html>

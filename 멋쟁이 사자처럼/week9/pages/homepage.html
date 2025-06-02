@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/week9/asset/css/style.css">
+    <link rel="stylesheet" href="/week9/asset/css/section/homepage.css">
+</head>
+<body>
+    <div id="wrap" class="container">
+        <div class="header">
+            <img src="/week9/asset/img/menu.png" alt="">
+            <img src="/week9/asset/img/Notification 1.png" alt="">
+        </div>
+        <h1>Welcome, Jessie.</h1>
+        <div class="section1">
+            <p>Your total asset portfolio</p>
+            <div class="section1_div">
+                <h1>N203,935</h1>
+                <button>Invest now</button>
+            </div>
+        </div>
+        <div class="section2">
+            <div class="section2_header">
+                <h1>Best Plans</h1>
+                <p>See All→</p>
+            </div>
+            <div class="section2_main">
+                <div class="main1">
+                    <p>Gold</p>
+                    <div class="return">30%return</div>
+                </div>
+                <div class="main2">
+                     <p>Silver</p>
+                    <div class="return">60%return</div>
+                </div>
+                <div class="main3">
+                     <p>Platinum</p>
+                    <div class="return">90%return</div>
+                </div>
+            </div>
+            <div class="section2_bottom">
+                <h1>Investment Guide</h1>
+                <div class="bottom1">
+                    <div class="bottom1_left">
+                        <p class="bold">Basic type of investments</p>
+                        <p>This is how you set your foot for 2020</p>
+                        <p>Stock market recession. What's next...</p>
+                    </div>
+                    <div class="bottom1_right">
+                        <img src="/week9/asset/img/homepage_img1.png" alt="">
+                    </div>
+                </div>
+                <div class="bottom2">
+                    <div class="bottom2_left">
+                        <p class="bold">How much can you start wit..</p>
+                        <p>What do you like to see? Li's a very</p>
+                        <p>differnt market from 2018. The way...</p>
+                    </div>
+                    <div class="bottom2_right">
+                        <img src="/week9/asset/img/homepage_img2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="home">
+                <img src="/week9/asset/img/home.png" alt="">
+                <p class="green">Home</p>
+            </div>
+            <div class="product">
+                <img src="/week9/asset/img/search.png" alt="">
+                <p>Product</p>
+            </div>
+            <div class="transcation">
+                <img src="/week9/asset/img/transcation.png" alt="">
+                <p>Transcation</p>
+            </div>
+            <div class="account">
+                <img src="/week9/asset/img/profile.png" alt="">
+                <p>Account</p>
+            </div>
+        </footer>
+        <script>
+            document.querySelector('.product').addEventListener('click',
+                function(){
+                    window.location.href='product.html'
+                }
+            )
+            document.querySelector('.transcation').addEventListener('click',
+                function(){
+                    window.location.href='transcation.html'
+                }
+            )
+            document.querySelector('.account').addEventListener('click',
+                function(){
+                    window.location.href='account.html'
+                }
+            )
+        </script>
+    </div>
+</body>
+</html>
