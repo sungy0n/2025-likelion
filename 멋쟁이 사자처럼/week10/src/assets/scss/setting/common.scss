@@ -1,0 +1,2660 @@
+button,
+a {
+    cursor: pointer;
+    background-color: var(--none);
+}
+
+body {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#root {
+    width: 100%;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.wrap {
+    width: 375px;
+    // height: 100vh;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.none {
+    display: none !important;
+}
+
+input {
+    outline: none;
+}
+
+// Nav
+
+#Nav_wrap {
+    position: absolute;
+    z-index: 1;
+    margin: 0 auto;
+    background-color: transparent;
+    width: 375px;
+    height: 60px;
+
+}
+
+#Nav_wrap>.nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 19px;
+    margin: 0 12px;
+
+    .right {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+
+        img {
+            width: 24px;
+            height: 24px;
+        }
+
+    }
+
+    .logo {
+        position: absolute;
+        right: calc(50% - 40px);
+    }
+}
+
+// Section01
+
+
+#Section01_wrap{
+    .nav{
+        width: 375px;
+        height: 60px;
+        background-color: #E7EAEF;
+    }
+    .section01{
+        position: relative;
+    
+        .title {
+        position: absolute;
+        color: #333333;
+        position: absolute;
+        top: calc(50% - 70px);
+        left: calc(50% - 120px);
+        font-family: "Bodoni Moda", serif;
+        font-optical-sizing: auto;
+        font-weight: 900;
+        font-style: italic;
+        }
+
+        .explore{
+            position: absolute;
+            display: flex;
+            width: 235px;
+            height: 40px;
+            background-color: #000;
+            opacity: 40%;
+            border-radius: 30px;
+            bottom: 40px;
+            left: calc(50% - 117px);
+
+                p{
+                    color: #fff;
+                    font-size: 16px;
+                    font-weight: 200;
+                    display: flex;
+                    width: 100%;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
+        .page{
+                position: absolute;
+                left: calc(50% - 24px);
+                top: 95%;
+            }
+
+    }
+
+    #section01_1{
+        font-family: "Bodoni Moda", serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+
+        h1{
+            font-size: 18px;
+            text-align: center;
+            letter-spacing: 5px;
+            margin-bottom: 0;
+        }
+
+        .line{
+            text-align: center;
+        }
+
+        ul{
+            list-style: none;
+            font-size: 14px;
+            display: flex;
+            justify-content: space-around;
+            padding-left: 0;
+            color: #888888;
+
+            .black{
+                color: #000;
+            }
+        }
+
+        main{
+            
+
+            .main1{
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 13px;
+                    padding: 13px;
+
+                        img{
+                            width: 165px;
+                            height: 200px;
+                        }
+
+                        .title{
+                            font-size: 12px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                        }
+
+                        .price{
+                            font-size: 15px;
+                            color: #DD8560;
+                            text-align: center;
+                        }
+                    }
+
+                    .main2{  
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 13px;
+
+                    img{
+                        width: 165px;
+                        height: 200px;
+                    }
+
+                    .title{
+                        font-size: 12px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+
+                    .price{
+                        font-size: 15px;
+                        color: #DD8560;
+                        text-align: center;
+                    }
+                }
+
+                .more{
+                    padding-top: 27px;
+                    padding-bottom: 37px;
+                    text-align: center;
+                }
+            }
+
+    }
+    #section01_2{
+        padding-top: 50px;
+        font-family: "Bodoni Moda", serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+
+        h1{
+            text-align: center;
+            font-size: 18px;
+            font-weight: 400;
+            letter-spacing: 5px;
+        }
+
+        .images{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
+    }
+
+    #section01_3{
+        font-family: "Bodoni Moda", serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+
+        h1{
+             text-align: center;
+            font-size: 18px;
+            font-weight: 400;
+            letter-spacing: 5px;
+        }
+
+        .line{
+            text-align: center;
+        }
+
+        .images{
+            display: flex;
+            padding-top: 17px;
+            padding-left: 15px;
+            justify-content:baseline;
+            gap: 11px;
+            overflow-x: auto;
+
+            .img1{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .title{
+                    font-size: 16px;
+                }
+
+                .price{
+                    font-size: 16px;
+                    color: #DD8560;
+                }
+            }
+
+            .img2{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .title{
+                    font-size: 16px;
+                }
+
+                .price{
+                    font-size: 16px;
+                    color: #DD8560;
+                }
+            }
+        }
+
+        .page{
+            padding-top: 20px;
+            text-align: center;
+        }
+
+    }
+
+    .trending{
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+
+        .group{
+            display: flex;
+            padding-left: 20px;
+            flex-direction: column;
+
+            .top{
+                display: flex;
+                justify-content: baseline;
+                gap: 8px;
+            }
+
+            .bottom{
+                display: flex;
+                justify-content: baseline;
+                gap: 8px;
+            }
+        }
+    }
+    #section01_4{
+        padding-top: 100px;
+        padding-bottom: 30px;
+        font-family: "Bodoni Moda", serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        width: 375px;
+        height: 465px;
+        background-color: #F2F2F2;
+        text-align: center;
+
+        p{
+            font-size: 14px;
+            color: #555555;
+        }
+
+        .box{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+
+            p{
+                font-size: 12px;
+            }
+
+            .box1{
+                display: flex;
+                justify-content: center;
+                flex-direction: row;
+                gap: 30px;
+            }
+
+            .box2{
+                display: flex;
+                justify-content: center;
+                flex-direction: row;
+                gap: 10px;
+            }
+        }
+    }
+    #section01_5{
+        padding-top: 40px;
+        font-family: "Bodoni Moda", serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        text-align: center;
+        h1{
+            font-size: 18px;
+            letter-spacing: 5px;
+            font-weight: 300;
+        }
+
+        .container{
+            padding-top: 18px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+
+            .container1{
+                display: flex;
+                flex-direction: row;
+                gap: 15px;
+            }
+
+            .container2{
+                display: flex;
+                flex-direction: row;
+                gap: 15px;
+            }
+        }
+
+        .icons{
+            padding-top: 50px;
+            padding-bottom: 24px;
+            display: flex;
+            justify-content: center;
+            gap: 45px;
+        }
+    }
+}
+
+#Footer_wrap{
+    font-family: "Bodoni Moda", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    padding-top: 40px;
+    width: 375px;
+    height: 300px;
+    background-color: #fff;
+    text-align: center;
+
+    .icons{
+        display: flex;
+        justify-content: center;
+        gap: 45px;
+        padding-bottom: 30px;
+    }
+
+    .info1{
+
+        p{
+            padding-top: 0;
+            font-size: 16px;
+            color: #333333;
+        }
+    }
+
+    .info2{
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+
+        h1{
+            font-size: 16px;
+            font-weight: 500;       
+        }
+
+        .about{
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .contact{
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .blog{
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+
+    .text{
+        padding-top: 10px;
+        font-size: 12px;
+        color: #555555;
+    }
+}
+
+#Blog_wrap{
+    font-family: "Bodoni Moda";
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: center;
+    padding-top: 30x;
+
+    .nav{
+        width: 375px;
+        height: 60px;
+        background-color: #fff;
+    }
+
+    h1{
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: 5px;
+        margin-bottom: 0;
+    }
+
+    ul{
+        list-style: none;
+        font-weight: 300;
+        font-size: 14px;
+        display: flex;
+        justify-content: space-around;
+        gap: 25px;
+        overflow-x: auto;
+        padding-left: 20px;
+
+        li{
+            padding: 5px 5px;
+            background-color: #f5f5f5;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    main{
+        padding-bottom: 26px;
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+
+        .main1{
+            
+            .content{
+                display: flex;
+                justify-content: space-between;
+                padding-left: 25px;
+                padding-right: 25px;
+                font-size: 12px;
+                color: #555555;
+
+                .hashtag{
+                    display: flex;
+                    gap: 16px;
+
+                    p{
+                        border: solid 1px #E7EAEF;
+                        border-radius: 20px;
+                        padding: 2px 6px;
+                    }
+                }
+            }
+        }
+
+        .main2{
+            .content{
+                    display: flex;
+                    justify-content: space-between;
+                    padding-left: 25px;
+                    padding-right: 25px;
+                    font-size: 12px;
+                    color: #555555;
+
+                    .hashtag{
+                    display: flex;
+                    gap: 16px;
+
+                    p{
+                        border: solid 1px #E7EAEF;
+                        border-radius: 20px;
+                        padding: 2px 6px;
+                    }
+                }
+            }
+
+            
+        }
+
+        .main3{
+             .content{
+                    display: flex;
+                    justify-content: space-between;
+                    padding-left: 25px;
+                    padding-right: 25px;
+                    font-size: 12px;
+                    color: #555555;
+
+                    .hashtag{
+                    display: flex;
+                    gap: 16px;
+
+                    p{
+                        border: solid 1px #E7EAEF;
+                        border-radius: 20px;
+                        padding: 2px 6px;
+                    }
+                  }
+            }
+
+            
+        }
+
+        .main4{
+            .content{
+                    display: flex;
+                    justify-content: space-between;
+                    padding-left: 25px;
+                    padding-right: 25px;
+                    font-size: 12px;
+                    color: #555555;
+            }
+
+            .hashtag{
+                display: flex;
+                gap: 16px;
+
+                p{
+                        border: solid 1px #E7EAEF;
+                        border-radius: 20px;
+                        padding: 2px 6px;
+                    }
+            }
+        }
+    }
+
+    .more{
+        display: inline-flex;
+        padding: 0px 40px;
+        font-family: serif;
+        border-radius: 0px;
+        border: solid 1px #888888;
+    }
+    
+}
+
+// Menu
+
+#Menu_wrap{
+    font-family: "Bodoni Moda",serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    padding: 10px;
+    margin-left: 17px;
+    padding-right: 35px;
+
+    .back{
+        font-family: "Bodoni Moda";
+        font-size: 22px;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .menu1{
+        list-style: none;
+        color: #888888;
+        display: flex;
+        justify-content: baseline;
+        gap: 52px;
+        padding: 0 0;
+
+        .black{
+            color: #000;
+        }
+    }
+
+    .menu2{
+            list-style: none;
+            padding: 0 0;
+            
+            li{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            
+            }
+
+            .link{
+                    text-decoration: none;
+                    color: inherit;
+                }
+
+            img{
+                width: 19px;
+                height: 9px;
+            }
+    }
+
+    .num{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        img{
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    .map{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        img{
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 23px;
+        
+        .line{
+            padding-top: 20px;
+        }
+        
+        .sns{
+            display: flex;
+            width: 375px;
+            justify-content: center;
+            gap: 35px;
+            padding-bottom: 39px;
+        }
+    }
+}
+
+#Apparel_wrap{
+    font-family: "Bodoni Moda",serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+    .nav{
+        width: 375px;
+        height: 60px;
+        background-color: #fff;
+    }
+
+    header{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 26px;
+
+        p{
+            font-size: 14px;
+        }
+
+        .setting{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 9px;
+
+            .new{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 3px;
+                width: 72px;
+                height: 36px;
+                background-color: #F5F5F5;
+                border-radius: 33px;
+                
+
+                p{
+                font-size: 13px;
+                }
+            }
+
+            .grid{
+                position: relative;
+                width: 36px;
+                height: 36px;
+                background-color: #F5F5F5;
+                border-radius: 100%;
+
+                img{
+                    position: absolute;
+                    top: calc(50% - 10px);
+                    left: calc(50% - 10px);
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+
+            .filter{
+                position: relative;
+                width: 36px;
+                height: 36px;
+                background-color: #F5F5F5;
+                border-radius: 100%;
+
+                img{
+                    position: absolute;
+                    top: calc(50% - 10px);
+                    left: calc(50% - 10px);
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+            
+
+        }
+    }
+
+    main{
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+
+        .main1{
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            text-decoration: none;
+
+            .product{
+                width: 100px;
+                height: 134px;
+            }
+            .content{
+                display: flex;
+                flex-direction: column;
+
+                .info{
+                    display: flex;
+                    flex-direction: column;
+
+                    h1{
+                        font-family: "Bodoni Moda";
+                        font-weight: 400;
+                        font-size: 14px;
+                        margin: 0;
+                        letter-spacing: 3px;
+                    }
+
+                    p{
+                        font-size: 13px;
+                        color: #555555;
+                        margin: 0;
+                        
+                    }
+                    .price{
+                        font-size: 15px;
+                        color: #DD8560;
+                    }
+                }
+
+                .review{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 3px;
+
+                    img{
+                        width: 13px;
+                        height: 13px;
+                    }
+
+                    p{
+                        font-size: 12px;
+                        color:#555555;
+                    }
+                }
+
+                .size{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .size1{
+                        display: flex;
+                        align-items: center;
+                        gap: 6px;
+
+                        p{
+                            font-size: 12px;
+                        }
+                        
+                        .circle{
+                            width: 24px;
+                            height: 24px;
+                            border: solid 1px #888888;
+                            border-radius: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 10px;
+                        }
+                    }
+                }
+                
+            }
+        }
+
+        .main2{
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+
+            .product{
+                width: 100px;
+                height: 134px;
+            }
+            .content{
+                display: flex;
+                flex-direction: column;
+
+                .info{
+                    display: flex;
+                    flex-direction: column;
+
+                    h1{
+                        font-family: "Bodoni Moda";
+                        font-weight: 400;
+                        font-size: 14px;
+                        margin: 0;
+                        letter-spacing: 3px;
+                    }
+
+                    p{
+                        font-size: 13px;
+                        color: #555555;
+                        margin: 0;
+                        
+                    }
+                    .price{
+                        font-size: 15px;
+                        color: #DD8560;
+                    }
+                }
+
+                .review{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 3px;
+
+                    img{
+                        width: 13px;
+                        height: 13px;
+                    }
+
+                    p{
+                        font-size: 12px;
+                        color:#555555;
+                    }
+                }
+
+                .size{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .size1{
+                        display: flex;
+                        align-items: center;
+                        gap: 6px;
+
+                        p{
+                            font-size: 12px;
+                        }
+                        
+                        .circle{
+                            width: 24px;
+                            height: 24px;
+                            border: solid 1px #888888;
+                            border-radius: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 10px;
+                        }
+                    }
+                }
+                
+            }
+        }
+        .main3{
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+
+            .product{
+                width: 100px;
+                height: 134px;
+            }
+            .content{
+                display: flex;
+                flex-direction: column;
+
+                .info{
+                    display: flex;
+                    flex-direction: column;
+
+                    h1{
+                        font-family: "Bodoni Moda";
+                        font-weight: 400;
+                        font-size: 14px;
+                        margin: 0;
+                        letter-spacing: 3px;
+                    }
+
+                    p{
+                        font-size: 13px;
+                        color: #555555;
+                        margin: 0;
+                        
+                    }
+                    .price{
+                        font-size: 15px;
+                        color: #DD8560;
+                    }
+                }
+
+                .review{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 3px;
+
+                    img{
+                        width: 13px;
+                        height: 13px;
+                    }
+
+                    p{
+                        font-size: 12px;
+                        color:#555555;
+                    }
+                }
+
+                .size{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .size1{
+                        display: flex;
+                        align-items: center;
+                        gap: 6px;
+
+                        p{
+                            font-size: 12px;
+                        }
+                        
+                        .circle{
+                            width: 24px;
+                            height: 24px;
+                            border: solid 1px #888888;
+                            border-radius: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 10px;
+                        }
+                    }
+                }
+                
+            }
+        }
+        .main4{
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+
+            .product{
+                width: 100px;
+                height: 134px;
+            }
+            .content{
+                display: flex;
+                flex-direction: column;
+
+                .info{
+                    display: flex;
+                    flex-direction: column;
+
+                    h1{
+                        font-family: "Bodoni Moda";
+                        font-weight: 400;
+                        font-size: 14px;
+                        margin: 0;
+                        letter-spacing: 3px;
+                    }
+
+                    p{
+                        font-size: 13px;
+                        color: #555555;
+                        margin: 0;
+                        
+                    }
+                    .price{
+                        font-size: 15px;
+                        color: #DD8560;
+                    }
+                }
+
+                .review{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 3px;
+
+                    img{
+                        width: 13px;
+                        height: 13px;
+                    }
+
+                    p{
+                        font-size: 12px;
+                        color:#555555;
+                    }
+                }
+
+                .size{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .size1{
+                        display: flex;
+                        align-items: center;
+                        gap: 6px;
+
+                        p{
+                            font-size: 12px;
+                        }
+                        
+                        .circle{
+                            width: 24px;
+                            height: 24px;
+                            border: solid 1px #888888;
+                            border-radius: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 10px;
+                        }
+                    }
+                }
+                
+            }
+        }
+        .main4{
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+
+            .product{
+                width: 100px;
+                height: 134px;
+            }
+            .content{
+                display: flex;
+                flex-direction: column;
+
+                .info{
+                    display: flex;
+                    flex-direction: column;
+
+                    h1{
+                        font-family: "Bodoni Moda";
+                        font-weight: 400;
+                        font-size: 14px;
+                        margin: 0;
+                        letter-spacing: 3px;
+                    }
+
+                    p{
+                        font-size: 13px;
+                        color: #555555;
+                        margin: 0;
+                        
+                    }
+                    .price{
+                        font-size: 15px;
+                        color: #DD8560;
+                    }
+                }
+
+                .review{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 3px;
+
+                    img{
+                        width: 13px;
+                        height: 13px;
+                    }
+
+                    p{
+                        font-size: 12px;
+                        color:#555555;
+                    }
+                }
+
+                .size{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .size1{
+                        display: flex;
+                        align-items: center;
+                        gap: 6px;
+
+                        p{
+                            font-size: 12px;
+                        }
+                        
+                        .circle{
+                            width: 24px;
+                            height: 24px;
+                            border: solid 1px #888888;
+                            border-radius: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 10px;
+                        }
+                    }
+                }
+                
+            }
+        }
+        .main5{
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+
+            .product{
+                width: 100px;
+                height: 134px;
+            }
+            .content{
+                display: flex;
+                flex-direction: column;
+
+                .info{
+                    display: flex;
+                    flex-direction: column;
+
+                    h1{
+                        font-family: "Bodoni Moda";
+                        font-weight: 400;
+                        font-size: 14px;
+                        margin: 0;
+                        letter-spacing: 3px;
+                    }
+
+                    p{
+                        font-size: 13px;
+                        color: #555555;
+                        margin: 0;
+                        
+                    }
+                    .price{
+                        font-size: 15px;
+                        color: #DD8560;
+                    }
+                }
+
+                .review{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 3px;
+
+                    img{
+                        width: 13px;
+                        height: 13px;
+                    }
+
+                    p{
+                        font-size: 12px;
+                        color:#555555;
+                    }
+                }
+
+                .size{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .size1{
+                        display: flex;
+                        align-items: center;
+                        gap: 6px;
+
+                        p{
+                            font-size: 12px;
+                        }
+                        
+                        .circle{
+                            width: 24px;
+                            height: 24px;
+                            border: solid 1px #888888;
+                            border-radius: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 10px;
+                        }
+                    }
+                }
+                
+            }
+        }
+
+        .main6{
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+
+            .product{
+                width: 100px;
+                height: 134px;
+            }
+            .content{
+                display: flex;
+                flex-direction: column;
+
+                .info{
+                    display: flex;
+                    flex-direction: column;
+
+                    h1{
+                        font-family: "Bodoni Moda";
+                        font-weight: 400;
+                        font-size: 14px;
+                        margin: 0;
+                        letter-spacing: 3px;
+                    }
+
+                    p{
+                        font-size: 13px;
+                        color: #555555;
+                        margin: 0;
+                        
+                    }
+                    .price{
+                        font-size: 15px;
+                        color: #DD8560;
+                    }
+                }
+
+                .review{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 3px;
+
+                    img{
+                        width: 13px;
+                        height: 13px;
+                    }
+
+                    p{
+                        font-size: 12px;
+                        color:#555555;
+                    }
+                }
+
+                .size{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .size1{
+                        display: flex;
+                        align-items: center;
+                        gap: 6px;
+
+                        p{
+                            font-size: 12px;
+                        }
+                        
+                        .circle{
+                            width: 24px;
+                            height: 24px;
+                            border: solid 1px #888888;
+                            border-radius: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 10px;
+                        }
+                    }
+                }
+                
+            }
+        }
+
+        .main6{
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+
+            .product{
+                width: 100px;
+                height: 134px;
+            }
+            .content{
+                display: flex;
+                flex-direction: column;
+
+                .info{
+                    display: flex;
+                    flex-direction: column;
+
+                    h1{
+                        font-family: "Bodoni Moda";
+                        font-weight: 400;
+                        font-size: 14px;
+                        margin: 0;
+                        letter-spacing: 3px;
+                    }
+
+                    p{
+                        font-size: 13px;
+                        color: #555555;
+                        margin: 0;
+                        
+                    }
+                    .price{
+                        font-size: 15px;
+                        color: #DD8560;
+                    }
+                }
+
+                .review{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 3px;
+
+                    img{
+                        width: 13px;
+                        height: 13px;
+                    }
+
+                    p{
+                        font-size: 12px;
+                        color:#555555;
+                    }
+                }
+
+                .size{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .size1{
+                        display: flex;
+                        align-items: center;
+                        gap: 6px;
+
+                        p{
+                            font-size: 12px;
+                        }
+                        
+                        .circle{
+                            width: 24px;
+                            height: 24px;
+                            border: solid 1px #888888;
+                            border-radius: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 10px;
+                        }
+                    }
+                }
+                
+            }
+        }
+        .main7{
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+
+            .product{
+                width: 100px;
+                height: 134px;
+            }
+            .content{
+                display: flex;
+                flex-direction: column;
+
+                .info{
+                    display: flex;
+                    flex-direction: column;
+
+                    h1{
+                        font-family: "Bodoni Moda";
+                        font-weight: 400;
+                        font-size: 14px;
+                        margin: 0;
+                        letter-spacing: 3px;
+                    }
+
+                    p{
+                        font-size: 13px;
+                        color: #555555;
+                        margin: 0;
+                        
+                    }
+                    .price{
+                        font-size: 15px;
+                        color: #DD8560;
+                    }
+                }
+
+                .review{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 3px;
+
+                    img{
+                        width: 13px;
+                        height: 13px;
+                    }
+
+                    p{
+                        font-size: 12px;
+                        color:#555555;
+                    }
+                }
+
+                .size{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .size1{
+                        display: flex;
+                        align-items: center;
+                        gap: 6px;
+
+                        p{
+                            font-size: 12px;
+                        }
+                        
+                        .circle{
+                            width: 24px;
+                            height: 24px;
+                            border: solid 1px #888888;
+                            border-radius: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 10px;
+                        }
+                    }
+                }
+                
+            }
+        }
+        .main8{
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+
+            .product{
+                width: 100px;
+                height: 134px;
+            }
+            .content{
+                display: flex;
+                flex-direction: column;
+
+                .info{
+                    display: flex;
+                    flex-direction: column;
+
+                    h1{
+                        font-family: "Bodoni Moda";
+                        font-weight: 400;
+                        font-size: 14px;
+                        margin: 0;
+                        letter-spacing: 3px;
+                    }
+
+                    p{
+                        font-size: 13px;
+                        color: #555555;
+                        margin: 0;
+                        
+                    }
+                    .price{
+                        font-size: 15px;
+                        color: #DD8560;
+                    }
+                }
+
+                .review{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 3px;
+
+                    img{
+                        width: 13px;
+                        height: 13px;
+                    }
+
+                    p{
+                        font-size: 12px;
+                        color:#555555;
+                    }
+                }
+
+                .size{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .size1{
+                        display: flex;
+                        align-items: center;
+                        gap: 6px;
+
+                        p{
+                            font-size: 12px;
+                        }
+                        
+                        .circle{
+                            width: 24px;
+                            height: 24px;
+                            border: solid 1px #888888;
+                            border-radius: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 10px;
+                        }
+                    }
+                }
+                
+            }
+        }
+
+        .main9{
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+
+            .product{
+                width: 100px;
+                height: 134px;
+            }
+            .content{
+                display: flex;
+                flex-direction: column;
+
+                .info{
+                    display: flex;
+                    flex-direction: column;
+
+                    h1{
+                        font-family: "Bodoni Moda";
+                        font-weight: 400;
+                        font-size: 14px;
+                        margin: 0;
+                        letter-spacing: 3px;
+                    }
+
+                    p{
+                        font-size: 13px;
+                        color: #555555;
+                        margin: 0;
+                        
+                    }
+                    .price{
+                        font-size: 15px;
+                        color: #DD8560;
+                    }
+                }
+
+                .review{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 3px;
+
+                    img{
+                        width: 13px;
+                        height: 13px;
+                    }
+
+                    p{
+                        font-size: 12px;
+                        color:#555555;
+                    }
+                }
+
+                .size{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .size1{
+                        display: flex;
+                        align-items: center;
+                        gap: 6px;
+
+                        p{
+                            font-size: 12px;
+                        }
+                        
+                        .circle{
+                            width: 24px;
+                            height: 24px;
+                            border: solid 1px #888888;
+                            border-radius: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 10px;
+                        }
+                    }
+                }
+                
+            }
+        }
+
+        .main10{
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+
+            .product{
+                width: 100px;
+                height: 134px;
+            }
+            .content{
+                display: flex;
+                flex-direction: column;
+
+                .info{
+                    display: flex;
+                    flex-direction: column;
+
+                    h1{
+                        font-family: "Bodoni Moda";
+                        font-weight: 400;
+                        font-size: 14px;
+                        margin: 0;
+                        letter-spacing: 3px;
+                    }
+
+                    p{
+                        font-size: 13px;
+                        color: #555555;
+                        margin: 0;
+                        
+                    }
+                    .price{
+                        font-size: 15px;
+                        color: #DD8560;
+                    }
+                }
+
+                .review{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 3px;
+
+                    img{
+                        width: 13px;
+                        height: 13px;
+                    }
+
+                    p{
+                        font-size: 12px;
+                        color:#555555;
+                    }
+                }
+
+                .size{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .size1{
+                        display: flex;
+                        align-items: center;
+                        gap: 6px;
+
+                        p{
+                            font-size: 12px;
+                        }
+                        
+                        .circle{
+                            width: 24px;
+                            height: 24px;
+                            border: solid 1px #888888;
+                            border-radius: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 10px;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        padding-top: 51px;
+
+        .page{
+            width: 32px;
+            height: 32px;
+            color: #333333;
+            background-color:#F2F2F2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        
+        .step{
+            width: 32px;
+            height: 32px;
+             display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #F2F2F2;
+            background-color: #333333;
+        }
+    }
+}
+
+#Product_wrap{
+    font-family: "Bodoni Moda",serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+
+    .nav{
+        width: 375px;
+        height: 60px;
+        background-color: #fff;
+    }
+
+    img{
+        padding: 0 15px;
+    }
+
+    main{
+        padding: 30px 15px;
+        display: flex;
+        flex-direction: column;
+
+        .info{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        .product{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+                p{
+                    letter-spacing: 3px;
+                    font-weight: 500;
+                }
+            }
+
+            p{
+                margin: 0;
+                color: #555555;
+            }
+
+            .price{
+                color: #DD8560;
+            }
+        }
+    }
+
+    .detail{
+        display: flex;
+        flex-direction: row;
+        gap: 35px;
+        color: #555555;
+
+        .title{
+            font-size: 12px;
+        }
+
+        .color{
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 12px;
+
+            #select{
+                position: absolute;
+                width: 22px;
+                height: 22px;
+                border-radius: 100%;
+                border: solid 1px #888888;
+                background-color:transparent;
+                top: calc(50% - 12px);
+                left: calc(50% - 17.5px);
+            }
+
+            .black{
+                width: 16px;
+                height: 16px;
+                border-radius: 100%;
+                background-color: #000;
+            }
+
+            .pink{
+                width: 16px;
+                height: 16px;
+                border-radius: 100%;
+                background-color: #DD8560;
+            }
+
+            .gray{
+                width: 16px;
+                height: 16px;
+                border-radius: 100%;
+                background-color: #E1E0DB;
+            }
+        }
+
+        .size{
+            display: flex;
+            flex-direction: row;
+            gap: 6px;
+            align-items: center;
+
+            #select{
+                background-color: #333333;
+                color: #F2F2F2;
+            }
+            .s{
+                width: 16px;
+                height: 16px;
+                border-radius: 100%;
+                border: solid 1px #555555;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 10px;
+            }
+        }
+    }
+
+    .link{
+            text-decoration: none;
+            color: inherit;
+        }
+
+    .add{
+        padding: 0 15px;
+        width: 375px;
+        height: 56px;
+        background-color: #000;
+        color: #F2F2F2;
+        display: flex;
+        justify-content: first baseline;
+        gap: 151px;
+        align-items: center;
+        
+
+        img{
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    .text{
+        padding: 0 15px;
+        color: #555555;
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+
+        .title{
+            color: #000;
+            letter-spacing: 5px;
+        }
+
+        .text1{
+            padding-top: 37px;
+        }
+
+        .text3{
+            display: flex;
+            flex-direction: column;
+
+            .icon1{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 12px;
+
+                img{
+                    padding: 0;
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+
+            .icon2{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 12px;
+
+                img{
+                    padding: 0;
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+
+            .icon3{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 12px;
+
+                img{
+                    padding: 0;
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+
+            .icon4{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 12px;
+
+                img{
+                    padding: 0;
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+        }
+
+        .text4{
+            display: flex;
+            flex-direction: column;
+
+            .care1{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                border-bottom: solid 1px #F2F2F2;
+                padding-bottom: 10px;
+
+                .black{
+                    color: #000;
+                }
+
+                .content1{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    
+                    p{
+                        margin: 0;
+                    }
+
+                    .box{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 10px;
+                    }
+                }
+
+                .content2{
+                    display: flex;
+
+                    p{
+                        margin: 0;
+                    }
+                }
+                
+
+                img{
+                    padding: 0;
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+        }
+
+        .care2{
+            display: flex;
+            justify-content: space-between;
+            border-bottom: solid 1px #F2F2F2;
+
+            .box{
+                display: flex;
+                align-items: center;
+                gap: 13px;
+
+                img{
+                    padding: 0;
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+
+        .care3{
+            display: flex;
+            justify-content: space-between;
+
+
+            .box{
+                display: flex;
+                align-items: center;
+                gap: 13px;
+
+                img{
+                    padding: 0;
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+      
+    }
+
+    .container{
+        padding-top: 60px;
+        display: flex;
+        flex-direction: column;
+
+        h1{
+            font-weight: 400;
+            font-size: 18px;
+            letter-spacing: 5px;
+            text-align: center;
+        }
+
+        .line{
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        .container1{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding-bottom: 19px;
+
+            .Con1{
+            display: flex;
+            flex-direction: column;
+            align-items:start;
+
+            img{
+                padding: 0;
+                padding-bottom: 8px;
+            }
+
+            .info{
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+
+                p{
+                    margin: 0;
+                    font-size: 12px;
+                }
+
+                .con{
+                    color: #555555;
+                }
+
+                .price{
+                    color: #DD8560;
+                    font-size: 15px;
+                }
+                }
+            }
+
+            .Con2{
+                display: flex;
+                flex-direction: column;
+                align-items:start;
+
+                img{
+                    padding: 0;
+                    padding-bottom: 8px;
+                }
+
+                .info{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+
+                    p{
+                        margin: 0;
+                        font-size: 12px;
+                    }
+
+                    .con{
+                        color: #555555;
+                    }
+
+                    .price{
+                        color: #DD8560;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+
+        .container2{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+            .Con3{
+            display: flex;
+            flex-direction: column;
+            align-items:start;
+
+            img{
+                padding: 0;
+                padding-bottom: 8px;
+            }
+
+            .info{
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+
+                p{
+                    margin: 0;
+                    font-size: 12px;
+                }
+
+                .con{
+                    color: #555555;
+                }
+
+                .price{
+                    color: #DD8560;
+                    font-size: 15px;
+                }
+            }
+        }
+
+        .Con4{
+            display: flex;
+            flex-direction: column;
+            align-items:start;
+
+            img{
+                padding: 0;
+                padding-bottom: 8px;
+            }
+
+            .info{
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+
+                p{
+                    margin: 0;
+                    font-size: 12px;
+                }
+
+                .con{
+                    color: #555555;
+                }
+
+                .price{
+                    color: #DD8560;
+                    font-size: 15px;
+                }
+            }
+             }
+        }
+    }
+
+}
+
+#Checkout_wrap{
+    font-family: "Bodoni Moda",serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+    .nav{
+        width: 375px;
+        height: 60px;
+        background-color: #fff;
+    }
+
+    h1{
+        font-family: "Bodoni Moda";
+        padding-top: 30px;
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+        letter-spacing: 5px;
+        margin-bottom: 0;
+    }
+
+    .line{
+        text-align: center;
+        padding-bottom: 18px;
+    }
+
+    .main1{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin: 0 16px;
+        border-bottom: solid 1px #F2F2F2;
+        padding-bottom: 17px;
+        
+        img{
+            width: 100px;
+            height: 133px;
+        }
+
+        .info{
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            .text{
+                .gray{
+                    color: #555555;
+                    font-size: 12px;
+                }
+            }
+
+            p{
+                margin: 0;
+                font-size: 14px;
+            }
+
+            .count{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 13px;
+            
+                .btn{
+                    width: 24px;
+                    height: 24px;
+                    border: solid 1px #F2F2F2;
+                    border-radius: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+            }
+
+            .price{
+                    font-size: 15px;
+                    color: #DD8560;
+                }
+        }
+    }
+
+    .main2{
+        display: flex;
+        margin: 0 33px;
+        justify-content:first baseline;
+        align-items: center;
+        gap: 4px;
+        border-bottom: solid 1px #F2F2F2;
+        
+
+        p{
+            font-size: 14px;
+        }
+    }
+
+    .main3{
+        display: flex;
+        margin: 0 33px;
+        justify-content:space-between;
+        align-items: center;
+        border-bottom: solid 1px #F2F2F2;
+
+        p{
+            font-size: 14px;
+        }
+
+        .delivery{
+            display: flex;
+            justify-content: first baseline;
+            align-items: center;
+            gap: 4px;
+
+            img{
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+    }
+
+    footer{
+        margin-top: 261px;
+        font-family: "Bodoni Moda";
+
+        .footer1{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 16px;
+           
+
+            p{
+                letter-spacing: 3px;
+                font-size: 14px;
+            }
+
+            .price{
+                color: #DD8560;
+            }
+        }
+
+        .footer2{
+            width: 375px;
+            height: 56px;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+            letter-spacing: 1px;
+            font-weight: 200;
+        }
+    }
+
+}
+
+#Search_wrap{
+    font-family: "Bodoni Moda",serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    padding-top: 17px;
+    margin: 0 16px;
+
+    .search_bar{
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: solid 1px #555555;
+        padding-bottom: 10px;
+
+        .left{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 11px;
+
+            input{
+                color: #555555;
+                font-size: 14px;
+                border: none;
+            }
+
+            input[type="search"]::-webkit-search-cancel-button {
+            display: none;
+            }
+        }
+    }
+
+    .search_items{
+        padding-bottom: 386px;
+
+        p{
+            font-size: 14px;
+            color: #555555;
+        }
+
+        .items{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+}
+
+#Contact_wrap{
+    font-family: "Bodoni Moda",serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    padding-top: 30px;
+
+    .nav{
+        width: 375px;
+        height: 60px;
+        background-color: #fff;
+    }
+
+    .title{
+        font-family: "Bodoni Moda";
+        font-size: 18px;
+        letter-spacing: 5px;
+        text-align: center;
+        font-weight: 400;
+        margin-bottom: 0;
+    }
+
+    .line{
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    .box1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 187px;
+            height: 40px;
+            background-color: #000;
+            color: #fff;
+
+            h1{
+                font-family: "Bodoni Moda";
+                font-size: 16px;
+                font-weight: 300;
+                letter-spacing: 1px;
+            }
+        }
+    }
+
+    .box2{
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 187px;
+            height: 40px;
+            background-color: #000;
+            color: #fff;
+
+            h1{
+                font-family: "Bodoni Moda";
+                font-size: 16px;
+                font-weight: 300;
+                letter-spacing: 1px;
+            }
+        }
+    }
+
+    .box3{
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+#About_wrap{
+    font-family: "Bodoni Moda",serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    padding-top: 30px;
+
+    .nav{
+        width: 375px;
+        height: 60px;
+        background-color: #fff;
+    }
+    
+    h1{
+        font-size: 18px;
+        letter-spacing: 5px;
+        text-align: center;
+        font-family: "Bodoni Moda";
+        font-weight: 400;
+        margin-bottom: 0;
+    }
+
+    .text{
+        padding-bottom: 17px;
+        margin: 0 16px;
+    }
+
+    .line{
+        text-align: center;
+    }
+
+    .sign{
+
+        div{
+            color: #888888;
+        }
+
+       .address{
+        margin: 0 16px;
+
+        .email{
+                font-size: 15px;
+                padding-bottom: 16px;
+                border: none;
+            }
+
+            .line{
+                border-bottom: solid 1px #888888;
+            }
+       }
+
+        .submit{
+            margin-top: 28px;
+            width: 375px;
+            height: 56px;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            align-items: center;
+            font-size: 14px;
+            font-family: "Bodoni Moda";
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+    }
+}
