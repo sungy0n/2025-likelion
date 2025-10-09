@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import '../Todo.scss'
 
-const Todo_add = ({handleClosePopup}) => {
+const Todo_add = ({onclose}) => {
   
   return (
     <div id="Wrap_Todo_add">
@@ -11,7 +11,7 @@ const Todo_add = ({handleClosePopup}) => {
           <input type="text" placeholder='Input your note...' />
         </div>
         <div className="btn">
-            <div className="cancel" onClick={handleClosePopup}>CANCEL</div>
+            <div className="cancel" onClick={onclose}>CANCEL</div>
            <div className="apply">APPLY</div>
         </div>     
     </div>
