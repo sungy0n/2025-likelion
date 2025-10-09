@@ -6,7 +6,6 @@ const App = () => {
   return (
     <>
       <Todo />
-      <Todo_Add />
     </>
   )
 }

@@ -190,6 +190,10 @@
 }
 
 #Wrap_Todo_add{
+    // 팝업 위치 조정
+    position: fixed;
+    top: calc(50% - 144.5px);
+
     display: flex;
     flex-direction: column;
     align-items: center;

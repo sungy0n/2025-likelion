@@ -9,13 +9,13 @@ import search2_icon from '../img/search2_icon.svg'
 import add_icon from '../img/add_icon.svg'
 
 const Todo = () => {
-    const [todoList, setTodoList] = useState([]);
-    const [isAdding, setIsAdding] = useState(false);
-
-    const handleAddItem = (newText)=>{
-        if(newText.trim()==='') return;
-        setTodoList([...todoList,newText]);
-        setIsAdding(false);
+    // Todo_Add 팝업
+    const [isVisable, setIsVisible] = useState(false);
+    const handleOpenPopup = () =>{
+        setIsVisible(true);
+    }
+    const handleClosePopup = () =>{
+        setIsVisible(false);
     }
 
   return (
@@ -35,15 +35,16 @@ const Todo = () => {
             </div>
         </div>
         <div className="todo_list_container">
-            {todoList.map((item)=>(
+            {/* {todoList.map((item)=>(
                 <Todo_item 
                 text={item.text}
                 />
-            ))}
+            ))} */}
         </div>
-        <div className="add">
+        <div className="add" onClick={handleOpenPopup}>
             <img className='add_icon' src={add_icon} alt="" />
         </div>
+        {isVisable && <Todo_Add onclose={handleClosePopup}/>}
     </div>
   )
 }
