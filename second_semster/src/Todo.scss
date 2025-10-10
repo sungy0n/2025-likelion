@@ -17,6 +17,7 @@
     }
 
     .search{
+        margin-bottom: 30px;
         display: flex;
         gap: 16px;
         
@@ -87,6 +88,21 @@
         
     }
 
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        h1{
+            color: white;
+            font-family: "DM Sans", sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+            margin-top: 20px;
+        }
+    }
+
 .todo_list{
     display: flex;
     width: 520px;
@@ -103,16 +119,18 @@
         align-items: center;
         gap: 17px;
 
-        input{
-            border: 1px solid #6C63FF;
-        }
-
 
         .todo_item{
             color: white;
             font-size: 20px;
             font-weight: bold;
-    }
+
+            &.completed {
+                text-decoration: line-through;
+                color: white;
+                opacity: 0.5;
+            }
+        }
     }
 
     .icon{

@@ -8,6 +8,7 @@ import search2_icon from '../img/search2_icon.svg'
 import add_icon from '../img/add_icon.svg'
 import del_icon from '../img/del_icon.svg'
 import edit_icon from '../img/edit_icon.svg'
+import empty_img from '../img/empty_img.svg'
 
 const Todo = () => {
     // Todo_Add 팝업
@@ -20,13 +21,14 @@ const Todo = () => {
         setIsVisible(false);
     }
 
-    //Todo 리스트
+    //Todo 리스트 추가 삭제
     const [todos, setTodos] = useState([]);
 
     const handleAddTodo = (text) => {
         const newTodo = {
             id: Date.now(),
             text: text,
+            completed: false,
         };
         setTodos([...todos, newTodo]);
     };
@@ -35,6 +37,14 @@ const Todo = () => {
         const updatedTodos = todos.filter((todo) => todo.id !== id);
         setTodos(updatedTodos);
     }
+    
+    //Todo 리스트 완료
+    const handleToggleTodo = (id) => {
+        const updatedTodos = todos.map((todo) => 
+            todo.id === id ? {...todo, completed: !todo.completed} : todo
+        );
+        setTodos(updatedTodos);
+    };
 
   return (
     <div id="Wrap_Todo">
@@ -55,15 +65,21 @@ const Todo = () => {
         {todos.map(todo => (
             <div className="todo_list">
                 <div className="text">
-                    <input type="checkbox" name="" id="" />
-                    <div className="todo_item">{todo.text}</div>
+                    <input type="checkbox" checked={todo.completed} onChange={()=> handleToggleTodo(todo.id)} name="" id="" />
+                    <div className={todo.completed ? 'todo_item completed' : 'todo_item'}>{todo.text}</div>
                 </div>
                 <div className="icon">
                     <img src={edit_icon} alt="" />
-                    <img src={del_icon} alt="" onClick={handleDeleteTodo} />
+                    <img src={del_icon} alt="" onClick={()=> handleDeleteTodo(todo.id)} />
                 </div>
             </div>
         ))}
+        {todos.length === 0 &&(
+            <main>
+                <img src={empty_img} alt="" />
+                <h1>Empty...</h1>
+            </main>
+        )}
         <div className="add" onClick={handleOpenPopup}>
             <img className='add_icon' src={add_icon} alt="" />
         </div>
