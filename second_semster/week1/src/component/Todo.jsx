@@ -21,7 +21,7 @@ const Todo = () => {
         setIsVisible(false);
     }
 
-    //Todo 리스트 추가 삭제
+    //Todo 리스트 추가 & 삭제
     const [todos, setTodos] = useState([]);
 
     const handleAddTodo = (text) => {
