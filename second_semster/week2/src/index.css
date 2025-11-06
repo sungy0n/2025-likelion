@@ -19,6 +19,8 @@ body{
   }
 
   .play{
+    display: flex;
+    justify-content: center;
     width: 168px;
     height: 90px;
     background-color: #2751A3;
@@ -35,6 +37,11 @@ body{
     }
 
   }
+
+  a{
+    text-decoration: none;
+  } 
+
 }
 
 #Main2{
@@ -79,10 +86,12 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center
-    ;
+    align-items: center;
+    gap: 35px;
+    
     .game_result{
-      margin-top: 35px;
+      margin-top: 12px;
+      margin-bottom: 154px;
       font-size: 40px;
       font-weight: bold;
       font-family: "Inter", sans-serif; 
@@ -90,7 +99,8 @@ body{
     }
 
     .game_img{
-      margin-top: 15px;
+      margin-top: 12px;
+      position: absolute;
       display: flex;
       justify-content: center;
       gap: 145px;
@@ -100,14 +110,16 @@ body{
       font-size: 14px;
       color: #827D7D;
       font-family: "Inter", sans-serif; 
+      margin: 0;
     }
   }
 
   .container3{
+    margin-top: 42px;
     display: flex;
     gap: 48px;
 
-    div{
+    button{
       display: flex;
       justify-content: center;
       align-items: center;
@@ -116,6 +128,7 @@ body{
       height: 60px;
       border-radius: 14px;
       background-color: #2751A3;
+      border: none;
       color: #fff;
       font-size: 25px;
       font-weight: bold;
